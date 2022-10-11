@@ -1,0 +1,69 @@
+
+.div1
+{
+    background-color:red;
+    margin-top: -130px;
+}
+.div2
+{
+    background-color:black;
+    
+
+}
+.div3
+{
+    background-color:white;
+    
+}
+.div4
+{
+    background-color:blue;
+    
+}
+.div5
+{
+    background-color:green;
+    
+}
+.div6
+{
+    background-color:orange;
+    
+}
+.div7
+{
+    background-color:darkred;
+}
+
+div{
+
+height: 200px;
+width:100%;
+
+
+}
+ul {
+    list-style-type: none;
+  width: 100%;
+ 
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+   
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+
+  }
+ .div1 .btn1{
+    background-color: red;
+    color:white
+ }

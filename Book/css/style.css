@@ -1,0 +1,90 @@
+#heading {
+    color:brown;
+    text-align: center;
+}
+.main{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.book{
+    
+    display: flex;
+   
+    width:100%;
+    padding-left: 15px;
+    background-color:azure;
+    height:auto;
+    }
+
+    
+.image {
+    margin-left: 30px;
+    padding: 10px;
+    height: 300px; 
+    width: 30%;
+  }
+.title
+    {
+       
+        margin-top: -20px;
+        padding: 10px;
+        padding-left:30px ;
+        height: 300px; 
+        width: 40%;
+        
+    }
+.description{
+    margin-top: -20px;
+}
+    h4
+    {
+        display: inline;
+        
+    }
+    h3{
+        display: inline;
+        color:darkred;
+        
+    }
+    button{
+        background-color:green; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 23px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    p{
+        
+        text-align: justify;
+    }
+    img{
+        width:70%;
+        height:240px;
+        margin:10px;
+        
+        
+  padding: 5px;
+    }
+
+    @media only screen and (max-width:800px) {
+        /* For tablets: */
+        .main {
+          width: 80%;
+          padding: 0;
+        }
+        .right {
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width:500px) {
+        /* For mobile phones: */
+        .menu, .main, .right ,.book,.description,.image,.title{
+          width: 100%;
+        }
+      }
