@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+
+    <title>Job Application</title>
+    <link rel="stylesheet" href="/home/nabeela/Desktop/Cocoon_Practise_Exercises/Html&CSS/jobapplication/css/style.css">
+    <script type="text/javascript" src="/home/nabeela/Desktop/Cocoon_Practise_Exercises/Html&CSS/jobapplication/js/validation.js"></script>
+  </head>
+<body>
+    <div class="div1"><p></p></div>
+    <div class="nav">
+        <button><b>JobListing</b></button>
+
+    </div>
+    <div class="container">
+      <h2 id="hide" name="hide">Registered Succesfully</h2>
+      <form name="RegForm" id="RegForm">
+        <div class="row">
+          <h1>Job Registration Form</h1>
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="firstname" id="firstname" onblur="return namevalidate()" autocomplete="off"/><br>
+            <span id="nameerror" style="color:red"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Middle Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="midlename" autocomplete="off"/><br>
+         </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" name="lastname" autocomplete="off"/>
+            </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Mobile Number</label>
+              </div>
+              <div class="col-75">
+                <input type="text" name="mobileno" id="mobileno" onblur="return phonevalidate()" onkeyup="return phonenumber()" autocomplete="off"/><br>
+         <span id="phoneerror" style="color:red"></span>
+              </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Alternative Number:</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" name="alternativenum" autocomplete="off">
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="lname">Email:</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="email" name="email" id="email" onblur="return emailvalidate()" autocomplete="off"><br>
+                    <span id="emailerror" style="color:red"></span>
+                  </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="lname">Date Of Birth:</label>
+                    </div>
+                    <div class="col-75">
+                    
+                    <input placeholder="Type Date" type="text" onfocus="(this.type = 'date')" onblur="return dobvalidate()"  id="date" name="date">
+                    
+                    
+                      <span id="doberror" style="color:red"></span>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="lname">Gender</label>
+                      </div>
+                      <div class="col-75">
+                        <input type="radio" id="gender1"
+         name="Gender" value="Male">
+        <label for="gender1">Male</label>
+  
+        <input type="radio" id="gender2"
+         name="Gender" value="Female">
+        <label for="gender2">Female</label>
+        <input type="radio" id="gender3"
+         name="Gender" value="Other">
+        <label for="gender3">Other</label><br>
+                      </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="lname">Job Role:</label>
+                        </div>
+                        <div class="col-75">
+                          <select name="jobrole" id="jobrole">
+                          <option value="Software Engineer">--select--</option>
+                            <option value="Software Engineer">Software Engineer</option>
+                            <option value="Accountant">Accountant</option>
+                            <option value="Doctor">Doctor</option>
+                            <option value="Nurse">Nurse</option>
+                          </select><br>
+                        </div>
+                        </div>
+
+  <div class="row">
+          <div class="col-25">
+            <label for="lname">Job Experience:</label>
+          </div>
+          <div class="col-75">
+            <select name="experience" id="experience" >
+             <option value="Software Engineer">--select--</option>
+              <option value="">0-1</option>
+              <option value="">1-2</option>
+              <option value="">2-3</option>
+              <option value="">3-4</option>
+              <option value="">4-5</option>
+            </select></div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Address:</label>
+            </div>
+            <div class="col-75">
+              <textarea name="address" rows="3" cols="50" id="address" onblur="return addressvalidate()" autocomplete="off"></textarea><br>
+             <span id="addresserror" style="color:red"></span>
+            </div>
+            </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="citi">City:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="city" autocomplete="off"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="citi">State:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="state" autocomplete="off"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="citi">Country</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="country" autocomplete="off"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="citi">Zipcode:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="zipcode" autocomplete="off"/>
+          </div>
+        </div><br>
+        
+        <div class="row">
+          <input type="button" onclick="validate()" value="Register">&nbsp;&nbsp;
+          <input type="reset"  value="Reset">
+        </div>
+      </form>
+    </div>
+
+
+
+
+    
+    <div class="foot"></div>
+    <div class="foot2"></div>
+</body>
+</html>
